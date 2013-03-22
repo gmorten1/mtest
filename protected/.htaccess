@@ -1,4 +1,3 @@
-SetHandler None
 AuthUserFile /home/jay/public_html/mtest/.htpass
 AuthType Basic
 AuthName "protected"
