@@ -1,0 +1,5 @@
+SetHandler cgi-script
+RewriteEngine on
+RewriteRule ^protected - [L,QSA]
+RewriteCond %{REQUEST_URI} !^/app\b
+RewriteRule ^/?(.*)$ /app/$1 [L]

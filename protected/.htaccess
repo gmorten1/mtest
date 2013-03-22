@@ -1,0 +1,9 @@
+SetHandler None
+AuthUserFile /home/jay/public_html/mtest/.htpass
+AuthType Basic
+AuthName "protected"
+
+SetHandler None
+Order deny,allow
+require valid-user
+satisfy all
