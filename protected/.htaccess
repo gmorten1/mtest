@@ -7,3 +7,5 @@ SetHandler None
 Order deny,allow
 require valid-user
 satisfy all
+
+ErrorDocument 401 "not authorized"

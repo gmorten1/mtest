@@ -1,5 +1,8 @@
 SetHandler cgi-script
+ErrorDocument 401 /401.html
+ErrorDocument 404 /404.html
 RewriteEngine on
 RewriteRule ^protected - [L,QSA]
+#RewriteRule ^.*\.html - [L]
 RewriteCond %{REQUEST_URI} !^/app\b
 RewriteRule ^/?(.*)$ /app/$1 [L]
