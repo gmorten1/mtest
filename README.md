@@ -12,3 +12,8 @@ INSTALL
 - note that the rewrite rules expect the app to be at url /app
     (not /foo/bar/app or /~yourname/app)
 
+TEST
+- /app/ should show the mojo lite app and dump the request object
+- /app/foo should show the mojo default 404 page
+- /protected/ should show a static page after Basic auth
+- /protected/foo should show apache 404 page
